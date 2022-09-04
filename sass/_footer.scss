@@ -1,0 +1,87 @@
+.idfooter {
+  display: block;
+  margin-top: 13rem;
+  &__container {
+    display: block;
+    padding: 0 10rem;
+    @media screen and (max-width: 500px) {
+      & {
+        padding: 0 2rem;
+      }
+    }
+  }
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    margin-bottom: 4rem;
+    @media screen and (max-width: 850px) {
+      & {
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+      }
+    }
+    &--right {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+    &--left {
+      justify-self: end;
+      display: flex;
+      flex-direction: row;
+      gap: 10rem;
+    }
+  }
+  &__brief {
+    padding: 9rem 0;
+    display: grid;
+    grid-gap: 2rem;
+    & p {
+      color: $color-text;
+      font-size: 1.5rem;
+    }
+  }
+}
+.products {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  font-size: 2rem;
+  font-weight: 500;
+  color: $color-text;
+  & ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    & a {
+      text-decoration: none;
+      color: #4e50f4;
+    }
+  }
+}
+.socials {
+  display: flex;
+  gap: 3rem;
+  & a {
+    text-decoration: none;
+    padding: 1rem 4rem;
+    border: 1px solid $color-text-light;
+    border-radius: 3rem;
+    font-size: 2rem;
+    color: #000000;
+  }
+}
+
+@media screen and (max-width: 1308px) {
+  html {
+    font-size: 50%;
+  }
+}
+@media screen and (max-width: 800px) {
+  html {
+    font-size: 40%;
+  }
+}

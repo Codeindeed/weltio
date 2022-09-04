@@ -1,0 +1,80 @@
+.button {
+  padding: 1rem 2rem;
+  border-radius: 3rem;
+  background-image: url(/imag/btn-nav.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  &__text {
+    text-decoration: none;
+    font-size: 1.7rem;
+    color: $color-text;
+  }
+  &--light {
+    padding: 2rem 5rem;
+    border: none;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10rem;
+    background-color: $button-color1;
+    transition: all 0.1s ease-in-out;
+    cursor: pointer;
+    &:hover {
+      background-color: $color-text;
+      color: $color-body;
+      & p {
+        color: $color-body;
+      }
+      & .light--text {
+        color: $color-text-light;
+      }
+    }
+  }
+  &__slide {
+    padding: 3rem 5rem;
+    background-color: $color-body;
+    border-radius: 6rem;
+    background-color: $color-card;
+    color: $color-text;
+    font-size: 1.7rem;
+  }
+  &__white {
+    padding: 1rem 4rem;
+    border-radius: 4rem;
+    background-color: $color-texts;
+    font-family: $font-family1;
+    font-size: 2rem;
+    color: $coloor-layout;
+  }
+  @media screen and (max-width: 1200px) {
+    &__white {
+      padding: 1rem 2rem;
+    }
+  }
+  &--purple {
+    padding: 1rem 2rem;
+    border-radius: 4rem;
+    background-color: #ece7fd;
+    font-family: $font-family1;
+    font-size: 1rem;
+    text-align: center;
+    color: #0b1e5b;
+  }
+  &--green {
+    padding: 1rem 2rem;
+    border-radius: 3rem;
+    background-color: #e8f2cf;
+    font-family: $font-family1;
+    font-size: 1rem;
+    color: #0b1e5b;
+  }
+}
+.app__content {
+  display: grid;
+  grid-gap: 0.2rem;
+  place-items: start;
+}
+.button__container {
+  width: 10rem;
+}

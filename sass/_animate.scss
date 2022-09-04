@@ -1,0 +1,36 @@
+@keyframes translateInfinite {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    transform: translateY(0%);
+  }
+}
+@keyframes fadeInOut {
+  0% {
+    transform: translateY(0%);
+  }
+  50% {
+    transform: translateY(10%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+.ball {
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: $coloor-layout;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 20;
+}

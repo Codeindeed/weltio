@@ -1,0 +1,33 @@
+$coloor-layout: #7e84e6;
+$color-text: #0b1e5b;
+$color-text-light: #abb8c3;
+$color-card: #e7e7fd;
+$color-card-light: #e8e9ff;
+$color-texts: #fff;
+$color-dark: #0b1e5b;
+$color-body: #f7f8f2;
+$font-family: "MuseoModerno", sans-serif;
+$font-family1: "Roboto Slab", serif;
+$button-color1: #eff1e5;
+$color-green: #b9db62;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  font-weight: 400;
+  line-height: 1.6;
+  color: #333;
+  box-sizing: border-box;
+}
+body {
+  background-color: $color-body;
+  width: 100%;
+  scroll-behavior: smooth;
+  // max-width: 190rem;
+}
