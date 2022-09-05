@@ -805,6 +805,11 @@ a {
     padding-left: 7rem;
   }
 }
+@media screen and (max-width: 600px) {
+  .idcrypto__contents--text {
+    padding-left: 0;
+  }
+}
 .idcrypto__contents--cards {
   width: 100%;
   position: relative;
