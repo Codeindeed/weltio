@@ -699,6 +699,11 @@ a {
   align-items: center;
   text-align: center;
 }
+@media screen and (max-width: 800px) {
+  .invest__texts h1 img {
+    width: 50px;
+  }
+}
 .invest__overview {
   display: grid;
   padding: 3rem 0;
@@ -797,6 +802,7 @@ a {
 @media screen and (max-width: 800px) {
   .idcrypto__contents--text {
     width: 100%;
+    padding-left: 7rem;
   }
 }
 .idcrypto__contents--cards {
