@@ -929,7 +929,7 @@ a {
   right: 0;
   -webkit-animation: fadeInOut 2s infinite;
           animation: fadeInOut 2s infinite;
-  z-index: -1;
+  z-index: 1;
 }
 .idoffer-image-1 img {
   height: 100%;
@@ -1756,11 +1756,15 @@ h1 {
   pointer-events: none;
   z-index: 20;
 }
+@media screen and (max-width: 1000px) {
+  .ball {
+    display: none;
+  }
+}
 
 .loader {
   background-color: #7e84e6;
   height: 100vh;
-  width: 100vw;
   display: flex;
   justify-content: center;
   align-items: center;
