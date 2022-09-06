@@ -15,6 +15,10 @@ const coins = document.querySelectorAll(".idcrypto__cards");
 const menubars = document.querySelector("#menu-bars");
 const mobileMenu = document.querySelector(".mobile__menu ");
 const navbarlist = document.querySelector(".navbar__list");
+const scrollinner = document.querySelector(".card__container");
+const positionInner = document.querySelector(".slider__inner");
+const wrapper = document.querySelector(".invest__cards");
+const el = document.querySelector(".scroll");
 let slides = Array.from(cards);
 console.log(body);
 const ball = document.querySelector(".ball");
@@ -32,19 +36,25 @@ window.onload = function () {
     .add({
       targets: ".svg #dot",
       opacity: 0,
+      backgroundColor: "#fff",
       delay: 0,
     })
     .add({
       targets: ".loader__dot",
       backgroundColor: "#fff",
-      translateY: [-20, 0],
+      translateY: [-50, 0],
+      delay: 1000,
+      duration: 1000,
+    })
+    .add({
+      targets: ".loader__dot",
       scale: [10, 400],
       delay: 0,
       duration: 1000,
     });
   setTimeout(() => {
     div.style.display = "none";
-  }, 3000);
+  }, 5000);
 };
 window.addEventListener("scroll", () => {
   if (lastHeight > window.scrollY) {
@@ -80,6 +90,34 @@ function toggle() {
 menubars.addEventListener("click", toggle);
 
 function animate() {
+  var tween3 = new TimelineMax();
+  tween3.add([
+    TweenMax.to(coins, 1, {
+      y: -100,
+    }),
+  ]);
+  var tween4 = new TimelineMax();
+  tween4.add([
+    TweenMax.to(".header__left--figure", 1, {
+      y: -100,
+    }),
+  ]);
+  let control = new ScrollMagic.Controller();
+  let scene3 = new ScrollMagic.Scene({
+    triggerElement: ".idcrypto__contents",
+    triggerHook: 0.5,
+    duration: 1000,
+  })
+    .setTween(tween3)
+    .addTo(control);
+  let scene4 = new ScrollMagic.Scene({
+    triggerElement: ".header",
+    triggerHook: 0.1,
+    duration: 1000,
+  })
+    .setTween(tween4)
+    .addTo(control);
+
   if (window.innerWidth >= 1250) {
     const controller = new ScrollMagic.Controller();
     var tween = new TimelineMax();
@@ -123,18 +161,7 @@ function animate() {
         color: "rgb(51, 51, 51)",
       }),
     ]);
-    var tween3 = new TimelineMax();
-    tween3.add([
-      TweenMax.to(coins, 1, {
-        y: -100,
-      }),
-    ]);
-    var tween4 = new TimelineMax();
-    tween4.add([
-      TweenMax.to(".header__left--figure", 1, {
-        y: -100,
-      }),
-    ]);
+
     let Scene = new ScrollMagic.Scene({
       triggerElement: ".cards",
       triggerHook: 0,
@@ -152,22 +179,24 @@ function animate() {
       .setPin(overview)
       .setTween(tween2)
       .addTo(controller);
-    let scene3 = new ScrollMagic.Scene({
-      triggerElement: ".idcrypto__contents",
-      triggerHook: 0.5,
-      duration: 1000,
-    })
-      .setTween(tween3)
-      .addTo(controller);
-    let scene4 = new ScrollMagic.Scene({
-      triggerElement: ".header",
-      triggerHook: 0.1,
-      duration: 1000,
-    })
-      .setTween(tween4)
-      .addTo(controller);
   }
 }
 
+// const padding = 20;
+// let scrollNow = 0;
+
+// positionInner.style.width =
+//   (wrapper.offsetWidth / (scrollinner.offsetWidth + padding * 2)) * 100 + "%";
+// const lerp = (a, b, n) => {
+//   return (1 - n) * a + n * b;
+// };
+// function render() {
+//   let now = lerp(scrollNow, wrapper.scrollLeft, 0.15);
+//   // gsap.set(el, { x: -now });
+//   gsap.set(positionInner, { x: (now / wrapper.offsetWidth) * 100 + "%" });
+//   scrollNow = now;
+//   requestAnimationFrame(render);
+// }
+// render();
 animate();
 initScrollReveal(targetElements, defaultProps);

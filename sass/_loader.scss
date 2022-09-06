@@ -27,12 +27,11 @@
   }
   &__dot {
     position: absolute;
+   background-color: $coloor-layout;
     margin: 4.2rem 0 0 20.2rem;
     width: 0.9rem;
     height: 1rem;
-    background-color: $color-texts;
     border-radius: 50%;
-    background-color: $color-texts;
     z-index: 3;
   }
   z-index: 1000000;
