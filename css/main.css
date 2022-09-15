@@ -910,6 +910,12 @@ a {
     height: 168px;
   }
 }
+@media screen and (max-width: 500px) {
+  .idoffer-card {
+    width: 120px;
+    height: 90px;
+  }
+}
 .idoffer-card-tags {
   display: grid;
   grid-gap: 1.4rem;
@@ -918,6 +924,12 @@ a {
   position: absolute;
   top: 19%;
   right: -25%;
+}
+@media screen and (max-width: 500px) {
+  .idoffer-stat-info {
+    top: -8%;
+    right: -65%;
+  }
 }
 .idoffer-stat-info-caption {
   position: absolute;

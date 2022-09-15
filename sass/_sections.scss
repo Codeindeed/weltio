@@ -378,6 +378,12 @@
         height: 168px;
       }
     }
+    @media screen and (max-width: 500px) {
+      & {
+        width: 120px;
+        height: 90px;
+      }
+    }
     &-tags {
       display: grid;
       grid-gap: 1.4rem;
@@ -387,6 +393,12 @@
     position: absolute;
     top: 19%;
     right: -25%;
+    @media screen and (max-width: 500px) {
+      & {
+        top: -8%;
+        right: -65%;
+      }
+    }
     &-caption {
       position: absolute;
       top: 40%;
