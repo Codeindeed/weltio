@@ -1072,7 +1072,7 @@ a {
     gap: 4rem;
     align-items: center;
     justify-content: center;
-    padding: 0 4rem;
+    padding: 0 0rem;
   }
 }
 @media screen and (max-width: 800px) {
