@@ -1349,8 +1349,8 @@ a {
   .card4 {
     max-width: 126px;
     grid-template-columns: 87px 87px;
-    top: -116px;
-    left: -218px;
+    top: -138px;
+    left: -188px;
   }
   .card4 > * {
     width: 80px;
