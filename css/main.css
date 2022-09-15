@@ -882,6 +882,11 @@ a {
     width: 156px;
   }
 }
+@media screen and (max-width: 400px) {
+  .idoffer-tags {
+    width: 146px;
+  }
+}
 .idoffer-tags > * {
   display: inline-block;
   padding: 9px 16px 11px 16px;
