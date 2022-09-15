@@ -173,6 +173,11 @@ body {
   line-height: 2;
   width: 78.9rem;
 }
+@media screen and (max-width: 800px) {
+  .invest__text {
+    width: 50%;
+  }
+}
 
 .fas {
   background-color: pink;
