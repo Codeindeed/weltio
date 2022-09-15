@@ -717,6 +717,11 @@ a {
   grid-gap: 3rem;
   box-sizing: border-box;
 }
+@media screen and (max-width: 800px) {
+  .invest__overview {
+    margin-left: -20px;
+  }
+}
 .invest__background {
   position: relative;
   padding: 2rem 0;
