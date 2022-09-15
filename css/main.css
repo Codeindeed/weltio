@@ -866,6 +866,11 @@ a {
     padding: 0rem 8rem;
   }
 }
+@media screen and (max-width: 500px) {
+  .idoffer__content {
+    padding: 0rem 5rem;
+  }
+}
 .idoffer__cards {
   position: relative;
   margin: 0 auto;

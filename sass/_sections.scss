@@ -328,6 +328,11 @@
         padding: 0rem 8rem;
       }
     }
+    @media screen and (max-width: 500px) {
+      & {
+        padding: 0rem 5rem;
+      }
+    }
   }
   &__cards {
     position: relative;
@@ -345,7 +350,7 @@
         width: 156px;
       }
     }
-       @media screen and (max-width: 400px) {
+    @media screen and (max-width: 400px) {
       & {
         width: 146px;
       }
