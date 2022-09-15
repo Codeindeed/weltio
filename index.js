@@ -64,7 +64,12 @@ window.addEventListener("scroll", () => {
   }
   lastHeight = window.scrollY;
 });
-pointer.addEventListener("click", () => {
+pointer.addEventListener("mouseenter", () => {
+  console.log(arrowDown, language);
+  dropDown.classList.toggle("hidden");
+  arrowDown.classList.toggle("rotate");
+});
+pointer.addEventListener("mouseleave", () => {
   console.log(arrowDown, language);
   dropDown.classList.toggle("hidden");
   arrowDown.classList.toggle("rotate");
@@ -182,21 +187,5 @@ function animate() {
   }
 }
 
-// const padding = 20;
-// let scrollNow = 0;
-
-// positionInner.style.width =
-//   (wrapper.offsetWidth / (scrollinner.offsetWidth + padding * 2)) * 100 + "%";
-// const lerp = (a, b, n) => {
-//   return (1 - n) * a + n * b;
-// };
-// function render() {
-//   let now = lerp(scrollNow, wrapper.scrollLeft, 0.15);
-//   // gsap.set(el, { x: -now });
-//   gsap.set(positionInner, { x: (now / wrapper.offsetWidth) * 100 + "%" });
-//   scrollNow = now;
-//   requestAnimationFrame(render);
-// }
-// render();
 animate();
 initScrollReveal(targetElements, defaultProps);

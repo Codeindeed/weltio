@@ -1245,6 +1245,11 @@ a {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 100px 90px;
 }
+@media screen and (max-width: 1000px) {
+  .card2 {
+    gap: 2rem;
+  }
+}
 .card2__icon {
   max-width: 33px;
   margin-left: 7rem;
@@ -1298,30 +1303,47 @@ a {
     width: 15.6rem;
   }
 }
+@media screen and (max-width: 1200px) {
+  .card3 {
+    top: 49px;
+  }
+}
 .card4 {
   position: absolute;
   background-color: none;
-  width: 23rem;
+  max-width: 230px;
   height: 14rem;
   top: 5%;
   left: 0;
   z-index: 1;
   display: grid;
   grid-gap: 1rem;
-  grid-template-columns: 120px 120px;
-  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
 }
-@media screen and (max-width: 1000px) {
-  .card4 {
-    grid-template-columns: 87px 87px;
-    top: -149px;
-    left: -247px;
-  }
+.card4 .card1__stocks:nth-child(-n+2) {
+  margin: 0 0 0 -11px;
 }
 .card4 > * {
   background-color: #fff;
-  border-radius: 1rem;
-  width: 100%;
+  border-radius: 1.2rem;
+  width: 100px;
+  height: 70px;
+  padding: 9px 12px 8px 10px;
+}
+.card4 .card1__stocks:nth-child(-n+2) {
+  margin: 0 0 0 -11px;
+}
+@media screen and (max-width: 1000px) {
+  .card4 {
+    max-width: 126px;
+    grid-template-columns: 87px 87px;
+    top: -116px;
+    left: -218px;
+  }
+  .card4 > * {
+    width: 80px;
+    height: 57px;
+  }
 }
 
 .card5 {
@@ -1340,8 +1362,8 @@ a {
   .card5 {
     width: 16rem;
     height: 16rem;
-    bottom: -171px;
-    right: -117px;
+    bottom: -113px;
+    right: -121px;
   }
 }
 
@@ -1381,6 +1403,8 @@ a {
   color: #262333;
   font-family: "MuseoModerno", sans-serif;
   font-size: 1.5rem;
+  font-weight: 350;
+  margin: 0 0 4px;
 }
 @media screen and (max-width: 1000px) {
   .etf {
@@ -1473,6 +1497,12 @@ h1 {
   top: 20%;
 }
 
+@media screen and (max-width: 1000px) {
+  .card__dark {
+    left: 18px;
+    top: -117px;
+  }
+}
 .card__container {
   display: flex;
   flex-direction: row;
