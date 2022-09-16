@@ -933,7 +933,7 @@ a {
 @media screen and (max-width: 500px) {
   .idoffer-card {
     width: 120px;
-    height: 90px;
+    height: 124px;
   }
 }
 .idoffer-card-tags {
@@ -1153,6 +1153,17 @@ a {
     width: 27rem;
   }
 }
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #3a4a79;
+  border-radius: 1rem;
+}
+
 .button {
   padding: 1rem 2rem;
   border-radius: 3rem;

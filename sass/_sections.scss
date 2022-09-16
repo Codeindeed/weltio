@@ -396,7 +396,7 @@
     @media screen and (max-width: 500px) {
       & {
         width: 120px;
-        height: 90px;
+        height: 124px;
       }
     }
     &-tags {
@@ -619,4 +619,14 @@
   .svg__container {
     width: 27rem;
   }
+}
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #3a4a79;
+  border-radius: 1rem;
 }
